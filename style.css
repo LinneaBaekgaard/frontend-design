@@ -1,16 +1,133 @@
 :root {
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
 }
 
 body {
-    font-family: system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
+  color: var(--gray-800);
+  background: var(--gray-50);
+  line-height: 1.7;
+  margin: 30px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+  article {
+    max-width: var(--max-width);
+    background: white;
+    padding: 2rem 3rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1.25;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--gray-900);
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--gray-200);
+      padding-bottom: 0.25em;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: var(--gray-800);
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      color: var(--gray-700);
+    }
+
+    p {
+      margin: 1rem 0;
+      color: var(--gray-700);
+      font-size: 1rem;
+
+      &.text-lead {
+        font-size: 1.25rem;
+        line-height: 1.8;
+        color: var(--gray-600);
+      }
+
+      &.text-small {
+        font-size: 0.875rem;
+        color: var(--gray-500);
+      }
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 500;
+      &:hover,
+      &:focus {
+        color: var(--gray-400);
+        text-decoration-color: var(--gray-400);
+      }
+    }
+
+    figure {
+      margin: 2rem 0;
+
+      img {
+        width: 100%;
+        border-radius: 0.75rem;
+      }
+
+      figcaption {
+        font-size: 0.9rem;
+        color: var(--gray-500);
+        text-align: center;
+        margin-top: 0.5rem;
+        font-style: italic;
+      }
+    }
+
+    code {
+      background: var(--gray-100);
+      padding: 0.15em 0.3em;
+      border-radius: 0.25em;
+      font-family: monospace;
+      font-size: 0.95em;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      background: var(--gray-100);
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      color: var(--gray-600);
+    }
+
+    ul,
+    ol {
+      margin: 1rem 0 1rem 1.5rem;
+      line-height: 1.6;
+
+      li + li {
+        margin-top: 0.5rem;
+      }
+    }
+  }
 }
