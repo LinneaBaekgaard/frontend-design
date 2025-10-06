@@ -34,7 +34,7 @@ article {
         letter-spacing: 2px;
         line-height: 1;
         place-self: end;
-        background: #BDC4CE;
+        background: #595c62;
         color: #fff;
         margin: 1rem;
     }
@@ -52,14 +52,13 @@ article {
 }
 
 .title {
-    font-family: 'Abril Fatface', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 2rem;
-    color: #3C55CC;
+    color: #000;
 }
 
 .location {
-    color: #C8C9CB;
+    color: #5e5e5e;
     text-transform: uppercase;
     font-size: .95em;
 }
